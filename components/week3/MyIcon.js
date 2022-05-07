@@ -3,11 +3,11 @@ import { View, Text } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 
 
-export default function MyIcon() {
+export default function MyIcon(props) {
     return (
-        <View style={{ justifyContent : 'center' , alignItems : 'center' }}>
-            <FontAwesome name="heart" size={28} color="tomato" />
-            <Text>หัวใจ</Text>            
+        <View style={{ fkex: 1 , justifyContent : 'center' , alignItems : 'center' }}>
+            <FontAwesome name= { props.name } size={ props.size } color= { props.color } />
+            <Text>{ props.title }</Text>            
         </View>    
     );
 }
